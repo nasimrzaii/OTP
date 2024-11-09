@@ -1,0 +1,78 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+h1{
+    margin: 0;
+}
+body{
+    font-family: 'poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./img/black.avif');
+    background-size: cover;
+    height: 100vh;
+}
+.otp-card {
+    text-align: center;
+    background-color: gray;
+    border-radius: 20px;
+    padding: 3rem;
+    box-shadow: 0 10px 40px -20px white;
+   } 
+.otp-card-inputs{
+    margin: 30px 0;
+    display: grid;
+    gap: 30px;
+    justify-content: center;
+    grid-template-columns: repeat(5, auto);
+   } 
+.otp-card-inputs input{
+    width: 60px;
+    height: 70px;
+    font-size: 35px;
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid black;
+    }
+    .otp-card button{
+        background-color:rgb(28, 28, 28) ;
+        border: none;
+        padding: 15px 50px ;
+        font-size: 18px;
+        color: white;
+        border-radius: 20px;
+        cursor: pointer;
+        margin-top: 15px;
+    }
+    .otp-card button:hover{
+        opacity: .9;
+    
+    }
+.otp-input.error {
+    border-color: #f00;
+}
+
+.otp-message {
+    margin-top: 10px;
+    color: #f00;
+    font-size: 1.2em;
+    text-align: center;
+}
+.otp-card button[disabled]{
+    opacity: .6;
+    cursor: default;
+}
+
+@media (max-width: 600px) {
+    .otp-input {
+        width: 40px;
+        height: 40px;
+        font-size: 1.5em;
+    }
+}
